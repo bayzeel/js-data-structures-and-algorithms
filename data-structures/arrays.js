@@ -46,3 +46,14 @@ function removeValueFromTheFirstPosOfTheArray ( arr ) {
   return arr;
 }
 console.log( 'removeValueFromTheFirstPosOfTheArray', removeValueFromTheFirstPosOfTheArray( [1, 2, 3, 4, 5] ) );
+
+
+var arr = ['The Chemical Brothers', 'The Chrystal Method', 'Underworld'];
+var iterator = arr[Symbol.iterator]();
+var arrEntries = arr.entries();
+var arrKeys = arr.keys();
+var arrValues = arr.values();
+console.log( iterator.next() );
+console.log( arrEntries.next() );
+console.log( arrKeys.next() );
+console.log( arrValues.next() );
