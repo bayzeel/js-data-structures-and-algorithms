@@ -26,19 +26,6 @@ Stack.prototype.getStack = function () {
   return this.items.slice();
 };
 
-var stack = new Stack();
-console.log( 'stack.isEmpty', stack.isEmpty() ); // true
-stack.push( 5 );
-stack.push( 8 );
-console.log( 'stack.peek', stack.peek() ); // 8
-stack.push( 11 );
-console.log( 'stack.size', stack.size() ); // 3
-console.log( 'stack.isEmpty', stack.isEmpty() ); // false
-stack.pop();
-stack.pop();
-stack.push( 15 );
-console.log( 'stack.size', stack.size() ); // 2
-
 
 function baseConverter ( decNumber, base ) {
   var remStack = new Stack(),
@@ -58,7 +45,3 @@ function baseConverter ( decNumber, base ) {
 
   return baseString;
 }
-
-console.log( baseConverter( 10, 2 ) ); // 1010
-console.log( baseConverter( 10, 8 ) );
-console.log( baseConverter( 10, 16 ) );
